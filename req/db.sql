@@ -11,7 +11,7 @@ CREATE TABLE `admin_user` (
   PRIMARY KEY (`id_admin_user`),
   UNIQUE KEY `username` (`username`)
 );
-INSERT INTO admin_user (username, password, created_at, updated_at) VALUES ('user', '123456');
+INSERT INTO admin_user (username, password, created_at, updated_at) VALUES ('user', '123456', NOW(), NOW());
 CREATE TABLE donor(
 	id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(200) NOT NULL ,
