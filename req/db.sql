@@ -1,3 +1,6 @@
+CREATE DATABASE bloodon;
+USE bloodon;
+
 CREATE TABLE `admin_user` (
   `id_admin_user` int NOT NULL AUTO_INCREMENT,
   `username` varchar(200) NOT NULL,
@@ -8,6 +11,7 @@ CREATE TABLE `admin_user` (
   PRIMARY KEY (`id_admin_user`),
   UNIQUE KEY `username` (`username`)
 );
+INSERT INTO admin_user (username, password, created_at, updated_at) VALUES ('user', '123456');
 CREATE TABLE donor(
 	id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(200) NOT NULL ,
